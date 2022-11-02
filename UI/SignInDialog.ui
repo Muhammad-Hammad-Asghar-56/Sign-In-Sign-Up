@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>398</width>
+    <height>448</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="signInWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>401</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#logo{
+border:2px solid white;
+border-radius:35px;
+background-color:white
+}
+QPushButton#loginBtn{
+opacity:1;
+background-color: rgb(43, 117, 255);
+color:white;
+font-size:12px;
+border-radius:10px;
+opacity:1;
+background-color: rgb(43, 117, 255);
+bordeer:2px solid white;
+color:white;
+font-size:12px;
+border-radius:10px
+}
+QPushButton#loginBtn:pressed{
+background-color:blue;
+font-size:10px;
+font-weight:Bold;
+}
+QPushButton#signupBtn{
+opacity:1;
+background-color: rgb(43, 117, 255);
+color:white;
+font-size:12px;
+border-radius:10px;
+opacity:1;
+background-color: rgb(43, 117, 255);
+bordeer:2px solid white;
+color:white;
+font-size:12px;
+border-radius:10px
+}
+QPushButton#signupBtn:pressed{
+background-color:blue;
+font-size:10px;
+font-weight:Bold;
+}
+QLineEdit#passTxt:hover{
+background-color:transparent;
+border:0px 0px 0px 0px;
+border-bottom:2px solid Blue
+}
+QLineEdit#passTxt{
+background-color:transparent;
+border:0px 0px 0px 0px;
+border-bottom:2px solid rgb(43, 117, 255)
+}
+QLineEdit#emailTxt:hover{
+background-color:transparent;
+border:0px 0px 0px 0px;
+border-bottom:2px solid Blue
+}
+QLineEdit#emailTxt{
+background-color:transparent;
+border:0px 0px 0px 0px;
+border-bottom:2px solid rgb(43, 117, 255)
+}</string>
+   </property>
+   <widget class="QLabel" name="logo">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>10</y>
+      <width>81</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../resources/shopping-cart (1).png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>80</y>
+      <width>321</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 16pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>E-Commerce Management System</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="emailTxt">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>140</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="placeholderText">
+     <string>Email</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="passTxt">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>200</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="placeholderText">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loginBtn">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>290</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Login</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="signupBtn">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>370</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::ClickFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Sign Up</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>151</x>
+      <y>330</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 8pt &quot;MS Sans Serif&quot;;
+font: 8pt &quot;MS Shell Dlg 2&quot;;
+color:rgb(0, 29, 124)</string>
+    </property>
+    <property name="text">
+     <string>Are you new?</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
